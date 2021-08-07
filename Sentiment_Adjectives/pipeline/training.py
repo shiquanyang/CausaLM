@@ -1,3 +1,5 @@
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), "../../"))
 from constants import SENTIMENT_EXPERIMENTS_DIR, MAX_SENTIMENT_SEQ_LENGTH, SENTIMENT_ADJECTIVES_PRETRAIN_IMA_DIR, \
     SENTIMENT_ADJECTIVES_DATASETS_DIR
 from pytorch_lightning import Trainer
