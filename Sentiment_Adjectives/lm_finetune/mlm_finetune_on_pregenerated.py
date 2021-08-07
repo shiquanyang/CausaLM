@@ -15,6 +15,8 @@ from tqdm import tqdm
 
 from transformers.tokenization_bert import BertTokenizer
 from transformers.optimization import AdamW, get_linear_schedule_with_warmup
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), "../../"))
 from BERT.lm_finetune.bert_mlm_finetune import BertForMLMPreTraining
 from Sentiment_Adjectives.lm_finetune.pregenerate_training_data import EPOCHS
 from BERT.bert_text_dataset import BertTextDataset
