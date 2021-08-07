@@ -4,7 +4,7 @@ from tqdm import tqdm, trange
 from tempfile import TemporaryDirectory
 import shelve
 import sys, os
-sys.path.append(os.path.dirname(__file__), "../../")
+sys.path.append(os.path.join(os.path.dirname(__file__), "../../"))
 from constants import BERT_PRETRAINED_MODEL, SENTIMENT_ADJECTIVES_PRETRAIN_DATA_DIR, \
     MAX_SENTIMENT_SEQ_LENGTH, NUM_CPU, SENTIMENT_ADJECTIVES_DATASETS_DIR
 from datasets.utils import TOKEN_SEPARATOR, ADJ_POS_TAGS, MASK_TOKEN, CLS_TOKEN, SEP_TOKEN, WORDPIECE_PREFIX, \
