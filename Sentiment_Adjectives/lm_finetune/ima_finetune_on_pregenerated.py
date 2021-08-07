@@ -14,6 +14,8 @@ from tqdm import tqdm
 
 from transformers import BertConfig
 
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), "../../"))
 from utils import init_logger
 
 from transformers.tokenization_bert import BertTokenizer
